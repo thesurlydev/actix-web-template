@@ -8,14 +8,15 @@ license-file = "LICENSE"
 readme = "README.md"
 homepage = "https://github.com/{{github_user}}/{{project-name}}"
 repository = "https://github.com/{{github_user}}/{{project-name}}"
-keywords = ["cli", "{{project-name}}", "tools", "shell"]
-categories = ["command-line-utilities", "command-line-interface", "utilities"]
+keywords = ["{{project-name}}"]
 
 [badges]
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-clap = { version = "3", features = ["derive", "env"] }
+actix-web = "4.0.1"
+env_logger = "0.9.0"
+log = "0.4"
 serde = "1"
 serde_derive = "1"
 serde_json = "1"
